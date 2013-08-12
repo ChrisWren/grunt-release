@@ -24,8 +24,8 @@ module.exports = function(grunt){
     });
 
     var tagName = grunt.config.getRaw('release.options.tagName') || '<%= version %>';
-    var commitMessage = grunt.config.getRaw('release.options.commitMessage') || 'release <%= version %>';
-    var tagMessage = grunt.config.getRaw('release.options.tagMessage') || 'version <%= version %>';
+    var commitMessage = grunt.config.getRaw('release.options.commitMessage') || 'Release <%= version %>';
+    var tagMessage = grunt.config.getRaw('release.options.tagMessage') || 'Version <%= version %>';
 
     var config = setup(options.file, type);
     var templateOptions = {
